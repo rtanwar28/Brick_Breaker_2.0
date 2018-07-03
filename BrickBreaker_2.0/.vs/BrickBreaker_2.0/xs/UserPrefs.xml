@@ -1,0 +1,18 @@
+﻿<Properties StartupConfiguration="{B6E44948-DACB-2743-C6FF-6EFA161C3B77}|">
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Proper Scripts/GameManager.cs">
+    <Files>
+      <File FileName="Assets/Proper Scripts/Paddle.cs" Line="20" Column="94" />
+      <File FileName="Assets/Proper Scripts/Ball.cs" Line="38" Column="41" />
+      <File FileName="Assets/Proper Scripts/CanvasManager.cs" Line="12" Column="54" />
+      <File FileName="Assets/Proper Scripts/BrickManagerTest.cs" Line="30" Column="1" />
+      <File FileName="Assets/Proper Scripts/GameManager.cs" Line="38" Column="76" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>
