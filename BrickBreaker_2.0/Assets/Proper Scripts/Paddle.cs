@@ -32,4 +32,13 @@ public class Paddle : MonoBehaviour
             transform.position = paddlePos;
         }
 	}
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.gameObject.tag == "powerUp")
+        {
+            Destroy(other.gameObject);
+            GetComponent<PowerupManager>().InvokePowerUps(other.gameObject.name);
+        }
+    }
 }

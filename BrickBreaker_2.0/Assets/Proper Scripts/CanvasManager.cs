@@ -5,13 +5,13 @@ using UnityEngine.UI;
 
 public class CanvasManager : MonoBehaviour 
 {
-    Text score, lives;
+    public Text score, lives;
 
-    int scoreVal, livesVal;
+    public int scoreVal, livesVal, restartScore;
 
     public GameObject gameOverPanel, nextLevelPanel, pausePanel;
 
-    public bool isPause;
+    public bool isPause, isRestartScore;
 
 	// Use this for initialization
 	void Start () 
@@ -20,6 +20,8 @@ public class CanvasManager : MonoBehaviour
         lives = GameObject.Find("Lives_Val").GetComponent<Text>();
         livesVal = 5;
         isPause = false;
+        restartScore = scoreVal;
+        isRestartScore = true;
 	}
 	
 	// Update is called once per frame
@@ -36,6 +38,12 @@ public class CanvasManager : MonoBehaviour
             pausePanel.SetActive(true);
             Time.timeScale = 0f;
         }
+
+        if(isRestartScore)
+        {
+            restartScore = scoreVal;
+            isRestartScore = false;
+        }
 	}
 
     public void UpdateScore()
@@ -47,6 +55,12 @@ public class CanvasManager : MonoBehaviour
     public void UpdateLives()
     {
         livesVal -= 1;
+        lives.text = livesVal.ToString();
+    }
+
+    public void PowerUpLives()
+    {
+        livesVal += 1;
         lives.text = livesVal.ToString();
     }
 }

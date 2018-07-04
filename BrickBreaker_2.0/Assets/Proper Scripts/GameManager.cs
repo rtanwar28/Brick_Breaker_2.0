@@ -17,8 +17,7 @@ public class GameManager : MonoBehaviour
     {
         gameCanvas.GetComponent<CanvasManager>().gameOverPanel.SetActive(false);
         gameCanvas.SetActive(false);
-        // # Note: The last change was done here for the time.timeScale.
-        //Time.timeScale = 1f;
+        Time.timeScale = 1f;
         SceneManager.LoadScene("MainMenu");
     }
 
@@ -36,7 +35,7 @@ public class GameManager : MonoBehaviour
     public void NextLevel()
     {
         GameObject.Find("Paddle").GetComponent<Paddle>().movePaddle = true;
-        Debug.Log("Level is : " + levelCtr);
+        gameCanvas.GetComponent<CanvasManager>().isRestartScore = true;
         SceneManager.LoadScene("Level_" + levelCtr);
         levelCtr++;
     }
@@ -51,9 +50,12 @@ public class GameManager : MonoBehaviour
     public void RestartLevel()
     {
         Time.timeScale = 1f;
+        gameCanvas.GetComponent<CanvasManager>().scoreVal = gameCanvas.GetComponent<CanvasManager>().restartScore;
+        gameCanvas.GetComponent<CanvasManager>().score.text = gameCanvas.GetComponent<CanvasManager>().restartScore.ToString("000");
+
         GameObject.Find("GameCanvas").GetComponent<CanvasManager>().isPause = false;
         GameObject.Find("GameCanvas").GetComponent<CanvasManager>().pausePanel.SetActive(false);
-        // this line is what makes resume and restart different
+        // This line is what makes resume and restart different
         Application.LoadLevel(Application.loadedLevel);
     }
 

@@ -217,7 +217,7 @@ RectTransform:
   m_Children:
   - {fileID: 730979439}
   m_Father: {fileID: 1952237352}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.4, y: 0.32515633}
   m_AnchorMax: {x: 0.6, y: 0.38962528}
@@ -467,7 +467,7 @@ RectTransform:
   m_Children:
   - {fileID: 85082482}
   m_Father: {fileID: 1952237352}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.4, y: 0.545469}
   m_AnchorMax: {x: 0.6, y: 0.61}
@@ -918,7 +918,7 @@ RectTransform:
   m_Children:
   - {fileID: 723268152}
   m_Father: {fileID: 1952237352}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.4, y: 0.43937474}
   m_AnchorMax: {x: 0.6, y: 0.5}
@@ -1154,6 +1154,74 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 638738888}
+--- !u!1 &683007901
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 683007902}
+  - component: {fileID: 683007904}
+  - component: {fileID: 683007903}
+  m_Layer: 5
+  m_Name: Background
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &683007902
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 683007901}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1952237352}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -121, y: 0}
+  m_SizeDelta: {x: 1118.2, y: 600}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &683007903
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 683007901}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 21300000, guid: 1e8724ed8cab84f558d68e87a9f94cf1, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &683007904
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 683007901}
 --- !u!1 &723268151
 GameObject:
   m_ObjectHideFlags: 0
@@ -1369,9 +1437,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '3
-
-'
+  m_Text: 5
 --- !u!222 &737645980
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1552,6 +1618,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 194c1cf01d34c42e1a69a6daab20bf6a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  score: {fileID: 0}
+  lives: {fileID: 0}
+  scoreVal: 0
+  livesVal: 0
+  restartScore: 0
   gameOverPanel: {fileID: 1165551304}
   nextLevelPanel: {fileID: 298609106}
   pausePanel: {fileID: 1277337646}
@@ -1641,7 +1712,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1952237352}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.18750001, y: 0.84900004}
   m_AnchorMax: {x: 0.8125001, y: 0.9566874}
@@ -2938,7 +3009,7 @@ RectTransform:
   m_Children:
   - {fileID: 1222259796}
   m_Father: {fileID: 1952237352}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.4, y: 0.65084374}
   m_AnchorMax: {x: 0.6, y: 0.71584374}
@@ -3268,6 +3339,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 683007902}
   - {fileID: 897699085}
   - {fileID: 1550889075}
   - {fileID: 268295717}

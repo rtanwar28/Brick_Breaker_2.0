@@ -6,17 +6,17 @@ public class BrickColorTest : MonoBehaviour
 {
     BrickManagerTest bmTest;
     CanvasManager canvasManager;
+    PowerupManager powerupManager;
 
     public int colorCtr;
     public string matName;
-
-
 
 	// Use this for initialization
 	void Start () 
     {
         bmTest = GameObject.Find("BrickManagerTest").GetComponent<BrickManagerTest>();
         canvasManager = GameObject.Find("GameCanvas").GetComponent<CanvasManager>();
+        powerupManager = GameObject.Find("Paddle").GetComponent<PowerupManager>();
 
         matName = GetComponent<MeshRenderer>().sharedMaterial.name;
 
@@ -48,8 +48,16 @@ public class BrickColorTest : MonoBehaviour
             canvasManager.UpdateScore();
             if(colorCtr < 0)
             {
+                Vector3 brickPos = transform.localPosition;
                 Destroy(gameObject);
                 bmTest.DeleteFromList(gameObject);
+
+                float generatePowerUp = Random.Range(0f, 100f);
+                if(generatePowerUp < 20f)
+                {
+                    Instantiate(powerupManager.powerUps[0], brickPos, Quaternion.identity);
+                }
+
             }
             else
             {
