@@ -2,32 +2,55 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour 
 {
     public int levelCtr = 1;
-    public GameObject gameCanvas, nextLevelPanel;
+    public GameObject gameCanvas, nextLevelPanel, mainMenuCanvas;
+
+    //public HighScoreManager highScoreManager;
+    public Text highestScore;
 
     private void Awake()
     {
         DontDestroyOnLoad(this);
+
+        if (FindObjectsOfType(GetType()).Length > 1)
+        {
+            Destroy(gameObject);
+        }
+
+        DontDestroyOnLoad(highestScore);
+        highestScore = GameObject.Find("HighestScore").GetComponent<Text>();
+        highestScore.text = PlayerPrefs.GetInt("HighestScore", 0).ToString("0000");
     }
 
     public void MainMenu()
     {
-        gameCanvas.GetComponent<CanvasManager>().gameOverPanel.SetActive(false);
-        gameCanvas.SetActive(false);
-        Time.timeScale = 1f;
         SceneManager.LoadScene("MainMenu");
+        int score = gameCanvas.GetComponent<CanvasManager>().scoreVal;
+
+        if (score > PlayerPrefs.GetInt("HighestScore", 0))
+        {
+            PlayerPrefs.SetInt("HighestScore", score);
+            highestScore.text = score.ToString();
+        }
+
+        Time.timeScale = 1f;
+
+        ResetGameValues();
     }
 
     public void PlayGame()
     {
+        mainMenuCanvas.SetActive(false);
+
         if(!gameCanvas.activeInHierarchy)
         {
             gameCanvas.SetActive(true);
         }
-        Debug.Log("Level is : " + levelCtr);
+
         SceneManager.LoadScene("Level_" + levelCtr);
         levelCtr++;
     }
@@ -57,6 +80,18 @@ public class GameManager : MonoBehaviour
         GameObject.Find("GameCanvas").GetComponent<CanvasManager>().pausePanel.SetActive(false);
         // This line is what makes resume and restart different
         Application.LoadLevel(Application.loadedLevel);
+    }
+
+    void ResetGameValues()
+    {
+        levelCtr = 1;
+        gameCanvas.GetComponent<CanvasManager>().gameOverPanel.SetActive(false);
+        gameCanvas.SetActive(false);
+        mainMenuCanvas.SetActive(true);
+        gameCanvas.GetComponent<CanvasManager>().scoreVal = 0;
+        gameCanvas.GetComponent<CanvasManager>().score.text = gameCanvas.GetComponent<CanvasManager>().scoreVal.ToString();
+        gameCanvas.GetComponent<CanvasManager>().livesVal = 1;
+        gameCanvas.GetComponent<CanvasManager>().lives.text = gameCanvas.GetComponent<CanvasManager>().livesVal.ToString();
     }
 
 
