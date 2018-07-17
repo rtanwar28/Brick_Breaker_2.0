@@ -59,9 +59,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\ExtensionMethods.cs" />
     <Compile Include="Assets\Proper Scripts\Ball.cs" />
     <Compile Include="Assets\Proper Scripts\BrickColorTest.cs" />
     <Compile Include="Assets\Proper Scripts\BrickManagerTest.cs" />
+    <Compile Include="Assets\Proper Scripts\BrickMover.cs" />
+    <Compile Include="Assets\Proper Scripts\BrickRotator.cs" />
     <Compile Include="Assets\Proper Scripts\CanvasManager.cs" />
     <Compile Include="Assets\Proper Scripts\GameManager.cs" />
     <Compile Include="Assets\Proper Scripts\HighScoreManager.cs" />

@@ -17,8 +17,9 @@ public class Paddle : MonoBehaviour
     {
         movePaddle = true;
         paddlePos = transform.position;
+
         // Clamping the paddle along the x-axis based in the orthographic view of the camera.
-        clampXVal = ((Camera.main.orthographicSize * Camera.main.aspect) + (transform.localScale.x / 2f)) - transform.localScale.x;
+        clampXVal = ((Camera.main.orthographicSize * Camera.main.aspect) - (GetComponent<BoxCollider>().size.x * transform.localScale.x/2));
 	}
 	
 	// Update is called once per frame

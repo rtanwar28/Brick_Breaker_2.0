@@ -1,14 +1,15 @@
 ﻿<Properties StartupConfiguration="{B6E44948-DACB-2743-C6FF-6EFA161C3B77}|">
   <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Proper Scripts/GameManager.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Proper Scripts/Ball.cs">
     <Files>
-      <File FileName="Assets/Proper Scripts/BrickColorTest.cs" Line="58" Column="1" />
-      <File FileName="Assets/Proper Scripts/Paddle.cs" Line="41" Column="82" />
-      <File FileName="Assets/Proper Scripts/PowerupManager.cs" Line="25" Column="54" />
-      <File FileName="Assets/Proper Scripts/BrickManagerTest.cs" Line="1" Column="1" />
-      <File FileName="Assets/Proper Scripts/CanvasManager.cs" Line="26" Column="21" />
-      <File FileName="Assets/Proper Scripts/GameManager.cs" Line="56" Column="6" />
-      <File FileName="Assets/Proper Scripts/HighScoreManager.cs" Line="16" Column="2" />
+      <File FileName="Assets/Proper Scripts/CanvasManager.cs" Line="29" Column="21" />
+      <File FileName="Assets/Proper Scripts/PowerupManager.cs" Line="29" Column="17" />
+      <File FileName="Assets/Proper Scripts/Ball.cs" Line="54" Column="1" />
+      <File FileName="Assets/Proper Scripts/BrickColorTest.cs" Line="18" Column="1" />
+      <File FileName="Assets/Proper Scripts/GameManager.cs" Line="117" Column="49" />
+      <File FileName="Assets/Proper Scripts/Paddle.cs" Line="45" Column="2" />
+      <File FileName="Assets/Proper Scripts/BrickMover.cs" Line="28" Column="113" />
+      <File FileName="Assets/ExtensionMethods.cs" Line="11" Column="6" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

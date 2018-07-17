@@ -26,8 +26,18 @@ public class PowerupManager : MonoBehaviour
         Invoke(powerName, 0f);
     }
 
-    void HeartTest()
+    void Heart()
     {
         canvasManager.PowerUpLives();
+    }
+
+    void PaddleUp()
+    {
+        Debug.Log("Increase paddle size");
+    }
+
+    void PaddleDown()
+    {
+        Debug.Log("Decrease paddle size");
     }
 }

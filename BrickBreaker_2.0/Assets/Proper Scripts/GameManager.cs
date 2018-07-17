@@ -11,6 +11,7 @@ public class GameManager : MonoBehaviour
 
     //public HighScoreManager highScoreManager;
     public Text highestScore;
+    private object yPaddle;
 
     private void Awake()
     {
@@ -79,7 +80,7 @@ public class GameManager : MonoBehaviour
         GameObject.Find("GameCanvas").GetComponent<CanvasManager>().isPause = false;
         GameObject.Find("GameCanvas").GetComponent<CanvasManager>().pausePanel.SetActive(false);
         // This line is what makes resume and restart different
-        Application.LoadLevel(Application.loadedLevel);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
     void ResetGameValues()
@@ -90,7 +91,7 @@ public class GameManager : MonoBehaviour
         mainMenuCanvas.SetActive(true);
         gameCanvas.GetComponent<CanvasManager>().scoreVal = 0;
         gameCanvas.GetComponent<CanvasManager>().score.text = gameCanvas.GetComponent<CanvasManager>().scoreVal.ToString();
-        gameCanvas.GetComponent<CanvasManager>().livesVal = 1;
+        gameCanvas.GetComponent<CanvasManager>().livesVal = 5;
         gameCanvas.GetComponent<CanvasManager>().lives.text = gameCanvas.GetComponent<CanvasManager>().livesVal.ToString();
     }
 
@@ -111,8 +112,8 @@ public class GameManager : MonoBehaviour
         // Setting the ball a child of the paddle.
         myBall.transform.SetParent(myPaddle.transform);
         // Setting the position of the paddle and ball.
-        myPaddle.transform.position = new Vector3(0f, -4f, 0f);
-        myBall.transform.position = new Vector3(0f, -3.3f, 0f);
+        myPaddle.transform.position = new Vector3(-0.07f, -4.32f, -0.2f);
+        myBall.transform.position = new Vector3(myPaddle.transform.position.x, myPaddle.transform.position.y + (myPaddle.GetComponent<BoxCollider>().size.y * myPaddle.transform.localScale.y / 2f) + (myBall.GetComponent<SphereCollider>().center.y * myBall.transform.localScale.y / 2f) , 0f);
         // Setting is ball bool to false and isKinematic to true so it does not move
         myBall.GetComponent<Ball>().isLaunched = false;
         myBall.GetComponent<Rigidbody>().isKinematic = true;

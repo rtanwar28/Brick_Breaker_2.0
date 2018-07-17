@@ -55,7 +55,8 @@ public class BrickColorTest : MonoBehaviour
                 float generatePowerUp = Random.Range(0f, 100f);
                 if(generatePowerUp < 20f)
                 {
-                    Instantiate(powerupManager.powerUps[0], brickPos, Quaternion.identity);
+                    int selectPU = Random.Range(0, 2);
+                    Instantiate(powerupManager.powerUps[selectPU], brickPos, Quaternion.identity);
                 }
 
             }
