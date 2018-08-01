@@ -28,7 +28,7 @@ public class CanvasManager : MonoBehaviour
 
     void SetValues()
     {
-        livesVal = 5;
+        livesVal = 20;
         lives.text = livesVal.ToString();
     }
 	

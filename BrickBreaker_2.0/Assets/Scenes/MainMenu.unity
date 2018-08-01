@@ -179,6 +179,318 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &97764481 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1793130744712852, guid: f6ec2fcf441224ec188cba27984bf9c3,
+    type: 2}
+  m_PrefabInternal: {fileID: 1082297071}
+--- !u!114 &97764486
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 97764481}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1674114588}
+          m_MethodName: OnMouseOver
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1674114588}
+          m_MethodName: OnMouseDown
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  delegates: []
+--- !u!1 &384640357 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1638935432646546, guid: f6ec2fcf441224ec188cba27984bf9c3,
+    type: 2}
+  m_PrefabInternal: {fileID: 1082297071}
+--- !u!114 &384640362
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 384640357}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1674114588}
+          m_MethodName: OnMouseOver
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1674114588}
+          m_MethodName: OnMouseDown
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  delegates: []
+--- !u!1 &589806106 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1114935238058528, guid: f6ec2fcf441224ec188cba27984bf9c3,
+    type: 2}
+  m_PrefabInternal: {fileID: 1082297071}
+--- !u!114 &589806111
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 589806106}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1674114588}
+          m_MethodName: OnMouseOver
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1674114588}
+          m_MethodName: OnMouseDown
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  delegates: []
+--- !u!1 &645456195 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1468152418853076, guid: f6ec2fcf441224ec188cba27984bf9c3,
+    type: 2}
+  m_PrefabInternal: {fileID: 1082297071}
+--- !u!114 &645456196
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 645456195}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1674114588}
+          m_MethodName: OnMouseOver
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1674114588}
+          m_MethodName: OnMouseDown
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  delegates: []
+--- !u!1 &934252405 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1315439298519286, guid: f6ec2fcf441224ec188cba27984bf9c3,
+    type: 2}
+  m_PrefabInternal: {fileID: 1082297071}
+--- !u!114 &934252410
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 934252405}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1674114588}
+          m_MethodName: OnMouseOver
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1674114588}
+          m_MethodName: OnMouseDown
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  delegates: []
+--- !u!1 &998614801 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1225453479619372, guid: f6ec2fcf441224ec188cba27984bf9c3,
+    type: 2}
+  m_PrefabInternal: {fileID: 1082297071}
+--- !u!114 &998614802
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 998614801}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1674114588}
+          m_MethodName: OnMouseOver
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1674114588}
+          m_MethodName: OnMouseDown
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  delegates: []
 --- !u!1001 &1082297071
 Prefab:
   m_ObjectHideFlags: 0
@@ -218,530 +530,21 @@ Prefab:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
-    - target: {fileID: 114652581613024090, guid: f6ec2fcf441224ec188cba27984bf9c3,
+    - target: {fileID: 114430548890392242, guid: f6ec2fcf441224ec188cba27984bf9c3,
         type: 2}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: QuitGame
+      propertyPath: levelCtr
+      value: 5
       objectReference: {fileID: 0}
-    - target: {fileID: 1038921839254364, guid: f6ec2fcf441224ec188cba27984bf9c3, type: 2}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114206506301509852, guid: f6ec2fcf441224ec188cba27984bf9c3,
+    - target: {fileID: 114861479953646058, guid: f6ec2fcf441224ec188cba27984bf9c3,
         type: 2}
-      propertyPath: m_FontData.m_Font
+      propertyPath: mouseHover
       value: 
-      objectReference: {fileID: 12800000, guid: a8632657cea7b4230b76761f2664bfc1,
-        type: 3}
-    - target: {fileID: 114247026932467024, guid: f6ec2fcf441224ec188cba27984bf9c3,
+      objectReference: {fileID: 8300000, guid: 5329f5d99edf34562bb34051bcfdb54a, type: 3}
+    - target: {fileID: 114861479953646058, guid: f6ec2fcf441224ec188cba27984bf9c3,
         type: 2}
-      propertyPath: m_FontData.m_Font
+      propertyPath: mouseClick
       value: 
-      objectReference: {fileID: 12800000, guid: a8632657cea7b4230b76761f2664bfc1,
-        type: 3}
-    - target: {fileID: 114853793637100514, guid: f6ec2fcf441224ec188cba27984bf9c3,
-        type: 2}
-      propertyPath: m_FontData.m_Font
-      value: 
-      objectReference: {fileID: 12800000, guid: a8632657cea7b4230b76761f2664bfc1,
-        type: 3}
-    - target: {fileID: 114432343345499928, guid: f6ec2fcf441224ec188cba27984bf9c3,
-        type: 2}
-      propertyPath: m_FontData.m_Font
-      value: 
-      objectReference: {fileID: 12800000, guid: a8632657cea7b4230b76761f2664bfc1,
-        type: 3}
-    - target: {fileID: 114206506301509852, guid: f6ec2fcf441224ec188cba27984bf9c3,
-        type: 2}
-      propertyPath: m_FontData.m_FontSize
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 114247026932467024, guid: f6ec2fcf441224ec188cba27984bf9c3,
-        type: 2}
-      propertyPath: m_FontData.m_FontSize
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 114853793637100514, guid: f6ec2fcf441224ec188cba27984bf9c3,
-        type: 2}
-      propertyPath: m_FontData.m_FontSize
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 114432343345499928, guid: f6ec2fcf441224ec188cba27984bf9c3,
-        type: 2}
-      propertyPath: m_FontData.m_FontSize
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 224837802643847640, guid: f6ec2fcf441224ec188cba27984bf9c3,
-        type: 2}
-      propertyPath: m_SizeDelta.y
-      value: -0.17999983
-      objectReference: {fileID: 0}
-    - target: {fileID: 224837802643847640, guid: f6ec2fcf441224ec188cba27984bf9c3,
-        type: 2}
-      propertyPath: m_SizeDelta.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224837802643847640, guid: f6ec2fcf441224ec188cba27984bf9c3,
-        type: 2}
-      propertyPath: m_AnchorMin.y
-      value: 0.9494439
-      objectReference: {fileID: 0}
-    - target: {fileID: 224755987402715692, guid: f6ec2fcf441224ec188cba27984bf9c3,
-        type: 2}
-      propertyPath: m_SizeDelta.y
-      value: -0.059999466
-      objectReference: {fileID: 0}
-    - target: {fileID: 224755987402715692, guid: f6ec2fcf441224ec188cba27984bf9c3,
-        type: 2}
-      propertyPath: m_AnchorMin.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224755987402715692, guid: f6ec2fcf441224ec188cba27984bf9c3,
-        type: 2}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224755987402715692, guid: f6ec2fcf441224ec188cba27984bf9c3,
-        type: 2}
-      propertyPath: m_SizeDelta.x
-      value: 0.25
-      objectReference: {fileID: 0}
-    - target: {fileID: 224117042697577228, guid: f6ec2fcf441224ec188cba27984bf9c3,
-        type: 2}
-      propertyPath: m_SizeDelta.y
-      value: -0.19999981
-      objectReference: {fileID: 0}
-    - target: {fileID: 224117042697577228, guid: f6ec2fcf441224ec188cba27984bf9c3,
-        type: 2}
-      propertyPath: m_AnchorMin.y
-      value: 0.9444439
-      objectReference: {fileID: 0}
-    - target: {fileID: 224047169119168052, guid: f6ec2fcf441224ec188cba27984bf9c3,
-        type: 2}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224047169119168052, guid: f6ec2fcf441224ec188cba27984bf9c3,
-        type: 2}
-      propertyPath: m_AnchorMax.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 224047169119168052, guid: f6ec2fcf441224ec188cba27984bf9c3,
-        type: 2}
-      propertyPath: m_SizeDelta.x
-      value: 0.05999756
-      objectReference: {fileID: 0}
-    - target: {fileID: 224047169119168052, guid: f6ec2fcf441224ec188cba27984bf9c3,
-        type: 2}
-      propertyPath: m_SizeDelta.y
-      value: 3.1299992
-      objectReference: {fileID: 0}
-    - target: {fileID: 1956420219861372, guid: f6ec2fcf441224ec188cba27984bf9c3, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1535619463576660, guid: f6ec2fcf441224ec188cba27984bf9c3, type: 2}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114591757098596274, guid: f6ec2fcf441224ec188cba27984bf9c3,
-        type: 2}
-      propertyPath: m_FontData.m_Font
-      value: 
-      objectReference: {fileID: 12800000, guid: a8632657cea7b4230b76761f2664bfc1,
-        type: 3}
-    - target: {fileID: 224877207208856236, guid: f6ec2fcf441224ec188cba27984bf9c3,
-        type: 2}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224877207208856236, guid: f6ec2fcf441224ec188cba27984bf9c3,
-        type: 2}
-      propertyPath: m_SizeDelta.x
-      value: 355.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 114591757098596274, guid: f6ec2fcf441224ec188cba27984bf9c3,
-        type: 2}
-      propertyPath: m_Text
-      value: Game Over
-      objectReference: {fileID: 0}
-    - target: {fileID: 114591757098596274, guid: f6ec2fcf441224ec188cba27984bf9c3,
-        type: 2}
-      propertyPath: m_FontData.m_FontSize
-      value: 60
-      objectReference: {fileID: 0}
-    - target: {fileID: 114591757098596274, guid: f6ec2fcf441224ec188cba27984bf9c3,
-        type: 2}
-      propertyPath: m_FontData.m_FontStyle
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114591757098596274, guid: f6ec2fcf441224ec188cba27984bf9c3,
-        type: 2}
-      propertyPath: m_FontData.m_MaxSize
-      value: 60
-      objectReference: {fileID: 0}
-    - target: {fileID: 224877207208856236, guid: f6ec2fcf441224ec188cba27984bf9c3,
-        type: 2}
-      propertyPath: m_AnchorMax.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 224877207208856236, guid: f6ec2fcf441224ec188cba27984bf9c3,
-        type: 2}
-      propertyPath: m_AnchorMin.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 224877207208856236, guid: f6ec2fcf441224ec188cba27984bf9c3,
-        type: 2}
-      propertyPath: m_AnchoredPosition.y
-      value: 140
-      objectReference: {fileID: 0}
-    - target: {fileID: 224877207208856236, guid: f6ec2fcf441224ec188cba27984bf9c3,
-        type: 2}
-      propertyPath: m_SizeDelta.y
-      value: 79.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 224877207208856236, guid: f6ec2fcf441224ec188cba27984bf9c3,
-        type: 2}
-      propertyPath: m_AnchorMin.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 224877207208856236, guid: f6ec2fcf441224ec188cba27984bf9c3,
-        type: 2}
-      propertyPath: m_AnchorMax.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 114979872102300296, guid: f6ec2fcf441224ec188cba27984bf9c3,
-        type: 2}
-      propertyPath: m_FontData.m_Font
-      value: 
-      objectReference: {fileID: 12800000, guid: a8632657cea7b4230b76761f2664bfc1,
-        type: 3}
-    - target: {fileID: 114979872102300296, guid: f6ec2fcf441224ec188cba27984bf9c3,
-        type: 2}
-      propertyPath: m_FontData.m_FontSize
-      value: 35
-      objectReference: {fileID: 0}
-    - target: {fileID: 114979872102300296, guid: f6ec2fcf441224ec188cba27984bf9c3,
-        type: 2}
-      propertyPath: m_FontData.m_FontStyle
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114979872102300296, guid: f6ec2fcf441224ec188cba27984bf9c3,
-        type: 2}
-      propertyPath: m_FontData.m_MinSize
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 114979872102300296, guid: f6ec2fcf441224ec188cba27984bf9c3,
-        type: 2}
-      propertyPath: m_FontData.m_MaxSize
-      value: 60
-      objectReference: {fileID: 0}
-    - target: {fileID: 114979872102300296, guid: f6ec2fcf441224ec188cba27984bf9c3,
-        type: 2}
-      propertyPath: m_Text
-      value: 'You Scored: 000'
-      objectReference: {fileID: 0}
-    - target: {fileID: 224091669500214942, guid: f6ec2fcf441224ec188cba27984bf9c3,
-        type: 2}
-      propertyPath: m_AnchoredPosition.x
-      value: -0.0000076293945
-      objectReference: {fileID: 0}
-    - target: {fileID: 224091669500214942, guid: f6ec2fcf441224ec188cba27984bf9c3,
-        type: 2}
-      propertyPath: m_SizeDelta.x
-      value: 355.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 114979872102300296, guid: f6ec2fcf441224ec188cba27984bf9c3,
-        type: 2}
-      propertyPath: m_FontData.m_Alignment
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 224091669500214942, guid: f6ec2fcf441224ec188cba27984bf9c3,
-        type: 2}
-      propertyPath: m_AnchorMin.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 224091669500214942, guid: f6ec2fcf441224ec188cba27984bf9c3,
-        type: 2}
-      propertyPath: m_AnchorMax.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 224091669500214942, guid: f6ec2fcf441224ec188cba27984bf9c3,
-        type: 2}
-      propertyPath: m_AnchoredPosition.y
-      value: 56.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 224091669500214942, guid: f6ec2fcf441224ec188cba27984bf9c3,
-        type: 2}
-      propertyPath: m_SizeDelta.y
-      value: 57.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 224091669500214942, guid: f6ec2fcf441224ec188cba27984bf9c3,
-        type: 2}
-      propertyPath: m_AnchorMin.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 224091669500214942, guid: f6ec2fcf441224ec188cba27984bf9c3,
-        type: 2}
-      propertyPath: m_AnchorMax.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 114850560141492594, guid: f6ec2fcf441224ec188cba27984bf9c3,
-        type: 2}
-      propertyPath: m_FontData.m_Font
-      value: 
-      objectReference: {fileID: 12800000, guid: a8632657cea7b4230b76761f2664bfc1,
-        type: 3}
-    - target: {fileID: 114850560141492594, guid: f6ec2fcf441224ec188cba27984bf9c3,
-        type: 2}
-      propertyPath: m_FontData.m_FontSize
-      value: 28
-      objectReference: {fileID: 0}
-    - target: {fileID: 114850560141492594, guid: f6ec2fcf441224ec188cba27984bf9c3,
-        type: 2}
-      propertyPath: m_FontData.m_MinSize
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114617376001674960, guid: f6ec2fcf441224ec188cba27984bf9c3,
-        type: 2}
-      propertyPath: m_Colors.m_HighlightedColor.r
-      value: 0.5446778
-      objectReference: {fileID: 0}
-    - target: {fileID: 114617376001674960, guid: f6ec2fcf441224ec188cba27984bf9c3,
-        type: 2}
-      propertyPath: m_Colors.m_HighlightedColor.g
-      value: 0.754717
-      objectReference: {fileID: 0}
-    - target: {fileID: 114617376001674960, guid: f6ec2fcf441224ec188cba27984bf9c3,
-        type: 2}
-      propertyPath: m_Colors.m_HighlightedColor.b
-      value: 0.74076945
-      objectReference: {fileID: 0}
-    - target: {fileID: 1510929832050574, guid: f6ec2fcf441224ec188cba27984bf9c3, type: 2}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114929709116131414, guid: f6ec2fcf441224ec188cba27984bf9c3,
-        type: 2}
-      propertyPath: m_FontData.m_Font
-      value: 
-      objectReference: {fileID: 12800000, guid: a8632657cea7b4230b76761f2664bfc1,
-        type: 3}
-    - target: {fileID: 224860144706849262, guid: f6ec2fcf441224ec188cba27984bf9c3,
-        type: 2}
-      propertyPath: m_AnchoredPosition.y
-      value: 0.7000122
-      objectReference: {fileID: 0}
-    - target: {fileID: 224860144706849262, guid: f6ec2fcf441224ec188cba27984bf9c3,
-        type: 2}
-      propertyPath: m_SizeDelta.y
-      value: -1.3999996
-      objectReference: {fileID: 0}
-    - target: {fileID: 114929709116131414, guid: f6ec2fcf441224ec188cba27984bf9c3,
-        type: 2}
-      propertyPath: m_FontData.m_FontStyle
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224860144706849262, guid: f6ec2fcf441224ec188cba27984bf9c3,
-        type: 2}
-      propertyPath: m_AnchorMin.y
-      value: 0.68166673
-      objectReference: {fileID: 0}
-    - target: {fileID: 224860144706849262, guid: f6ec2fcf441224ec188cba27984bf9c3,
-        type: 2}
-      propertyPath: m_AnchorMax.x
-      value: 0.6875001
-      objectReference: {fileID: 0}
-    - target: {fileID: 224860144706849262, guid: f6ec2fcf441224ec188cba27984bf9c3,
-        type: 2}
-      propertyPath: m_AnchoredPosition.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 224860144706849262, guid: f6ec2fcf441224ec188cba27984bf9c3,
-        type: 2}
-      propertyPath: m_SizeDelta.x
-      value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114808471326952858, guid: f6ec2fcf441224ec188cba27984bf9c3,
-        type: 2}
-      propertyPath: m_FontData.m_Font
-      value: 
-      objectReference: {fileID: 12800000, guid: a8632657cea7b4230b76761f2664bfc1,
-        type: 3}
-    - target: {fileID: 114011682726673564, guid: f6ec2fcf441224ec188cba27984bf9c3,
-        type: 2}
-      propertyPath: m_FontData.m_Font
-      value: 
-      objectReference: {fileID: 12800000, guid: a8632657cea7b4230b76761f2664bfc1,
-        type: 3}
-    - target: {fileID: 114433269932838596, guid: f6ec2fcf441224ec188cba27984bf9c3,
-        type: 2}
-      propertyPath: m_FontData.m_Font
-      value: 
-      objectReference: {fileID: 12800000, guid: a8632657cea7b4230b76761f2664bfc1,
-        type: 3}
-    - target: {fileID: 114591219608399368, guid: f6ec2fcf441224ec188cba27984bf9c3,
-        type: 2}
-      propertyPath: m_FontData.m_Font
-      value: 
-      objectReference: {fileID: 12800000, guid: a8632657cea7b4230b76761f2664bfc1,
-        type: 3}
-    - target: {fileID: 114808471326952858, guid: f6ec2fcf441224ec188cba27984bf9c3,
-        type: 2}
-      propertyPath: m_FontData.m_FontSize
-      value: 28
-      objectReference: {fileID: 0}
-    - target: {fileID: 114011682726673564, guid: f6ec2fcf441224ec188cba27984bf9c3,
-        type: 2}
-      propertyPath: m_FontData.m_FontSize
-      value: 28
-      objectReference: {fileID: 0}
-    - target: {fileID: 114433269932838596, guid: f6ec2fcf441224ec188cba27984bf9c3,
-        type: 2}
-      propertyPath: m_FontData.m_FontSize
-      value: 28
-      objectReference: {fileID: 0}
-    - target: {fileID: 114591219608399368, guid: f6ec2fcf441224ec188cba27984bf9c3,
-        type: 2}
-      propertyPath: m_FontData.m_FontSize
-      value: 28
-      objectReference: {fileID: 0}
-    - target: {fileID: 114362098006523098, guid: f6ec2fcf441224ec188cba27984bf9c3,
-        type: 2}
-      propertyPath: m_Colors.m_HighlightedColor.r
-      value: 0.8773585
-      objectReference: {fileID: 0}
-    - target: {fileID: 114362098006523098, guid: f6ec2fcf441224ec188cba27984bf9c3,
-        type: 2}
-      propertyPath: m_Colors.m_HighlightedColor.g
-      value: 0.2139681
-      objectReference: {fileID: 0}
-    - target: {fileID: 114362098006523098, guid: f6ec2fcf441224ec188cba27984bf9c3,
-        type: 2}
-      propertyPath: m_Colors.m_HighlightedColor.b
-      value: 0.19450872
-      objectReference: {fileID: 0}
-    - target: {fileID: 114563125595678938, guid: f6ec2fcf441224ec188cba27984bf9c3,
-        type: 2}
-      propertyPath: m_Colors.m_HighlightedColor.r
-      value: 0.54509807
-      objectReference: {fileID: 0}
-    - target: {fileID: 114563125595678938, guid: f6ec2fcf441224ec188cba27984bf9c3,
-        type: 2}
-      propertyPath: m_Colors.m_HighlightedColor.g
-      value: 0.7529412
-      objectReference: {fileID: 0}
-    - target: {fileID: 114563125595678938, guid: f6ec2fcf441224ec188cba27984bf9c3,
-        type: 2}
-      propertyPath: m_Colors.m_HighlightedColor.b
-      value: 0.7411765
-      objectReference: {fileID: 0}
-    - target: {fileID: 114993247425766088, guid: f6ec2fcf441224ec188cba27984bf9c3,
-        type: 2}
-      propertyPath: m_Colors.m_HighlightedColor.r
-      value: 0.92890465
-      objectReference: {fileID: 0}
-    - target: {fileID: 114993247425766088, guid: f6ec2fcf441224ec188cba27984bf9c3,
-        type: 2}
-      propertyPath: m_Colors.m_HighlightedColor.g
-      value: 0.9339623
-      objectReference: {fileID: 0}
-    - target: {fileID: 114993247425766088, guid: f6ec2fcf441224ec188cba27984bf9c3,
-        type: 2}
-      propertyPath: m_Colors.m_HighlightedColor.b
-      value: 0.5242524
-      objectReference: {fileID: 0}
-    - target: {fileID: 114064527901556352, guid: f6ec2fcf441224ec188cba27984bf9c3,
-        type: 2}
-      propertyPath: m_Colors.m_HighlightedColor.r
-      value: 0.44010326
-      objectReference: {fileID: 0}
-    - target: {fileID: 114064527901556352, guid: f6ec2fcf441224ec188cba27984bf9c3,
-        type: 2}
-      propertyPath: m_Colors.m_HighlightedColor.g
-      value: 0.8113208
-      objectReference: {fileID: 0}
-    - target: {fileID: 114064527901556352, guid: f6ec2fcf441224ec188cba27984bf9c3,
-        type: 2}
-      propertyPath: m_Colors.m_HighlightedColor.b
-      value: 0.5829084
-      objectReference: {fileID: 0}
-    - target: {fileID: 1103243255497268, guid: f6ec2fcf441224ec188cba27984bf9c3, type: 2}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114906215180649298, guid: f6ec2fcf441224ec188cba27984bf9c3,
-        type: 2}
-      propertyPath: m_FontData.m_Font
-      value: 
-      objectReference: {fileID: 12800000, guid: a8632657cea7b4230b76761f2664bfc1,
-        type: 3}
-    - target: {fileID: 114906215180649298, guid: f6ec2fcf441224ec188cba27984bf9c3,
-        type: 2}
-      propertyPath: m_FontData.m_FontStyle
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114906215180649298, guid: f6ec2fcf441224ec188cba27984bf9c3,
-        type: 2}
-      propertyPath: m_FontData.m_FontSize
-      value: 60
-      objectReference: {fileID: 0}
-    - target: {fileID: 114906215180649298, guid: f6ec2fcf441224ec188cba27984bf9c3,
-        type: 2}
-      propertyPath: m_FontData.m_MaxSize
-      value: 60
-      objectReference: {fileID: 0}
-    - target: {fileID: 224037266090236160, guid: f6ec2fcf441224ec188cba27984bf9c3,
-        type: 2}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224037266090236160, guid: f6ec2fcf441224ec188cba27984bf9c3,
-        type: 2}
-      propertyPath: m_SizeDelta.y
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 224037266090236160, guid: f6ec2fcf441224ec188cba27984bf9c3,
-        type: 2}
-      propertyPath: m_AnchorMin.x
-      value: 0.31250003
-      objectReference: {fileID: 0}
-    - target: {fileID: 224037266090236160, guid: f6ec2fcf441224ec188cba27984bf9c3,
-        type: 2}
-      propertyPath: m_AnchorMin.y
-      value: 0.71833336
-      objectReference: {fileID: 0}
-    - target: {fileID: 224037266090236160, guid: f6ec2fcf441224ec188cba27984bf9c3,
-        type: 2}
-      propertyPath: m_AnchorMax.x
-      value: 0.69000006
-      objectReference: {fileID: 0}
-    - target: {fileID: 224037266090236160, guid: f6ec2fcf441224ec188cba27984bf9c3,
-        type: 2}
-      propertyPath: m_AnchorMax.y
-      value: 0.8416667
-      objectReference: {fileID: 0}
-    - target: {fileID: 224037266090236160, guid: f6ec2fcf441224ec188cba27984bf9c3,
-        type: 2}
-      propertyPath: m_AnchoredPosition.x
-      value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 224037266090236160, guid: f6ec2fcf441224ec188cba27984bf9c3,
-        type: 2}
-      propertyPath: m_SizeDelta.x
-      value: -2
-      objectReference: {fileID: 0}
-    - target: {fileID: 114153298985052008, guid: f6ec2fcf441224ec188cba27984bf9c3,
-        type: 2}
-      propertyPath: m_FontData.m_FontSize
-      value: 28
-      objectReference: {fileID: 0}
-    - target: {fileID: 114153298985052008, guid: f6ec2fcf441224ec188cba27984bf9c3,
-        type: 2}
-      propertyPath: m_FontData.m_Font
-      value: 
-      objectReference: {fileID: 12800000, guid: a8632657cea7b4230b76761f2664bfc1,
-        type: 3}
+      objectReference: {fileID: 8300000, guid: 06ee2f37caccb4773876d256fb738064, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f6ec2fcf441224ec188cba27984bf9c3, type: 2}
   m_IsPrefabParent: 0
@@ -826,6 +629,64 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1230619593 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1980881613443730, guid: f6ec2fcf441224ec188cba27984bf9c3,
+    type: 2}
+  m_PrefabInternal: {fileID: 1082297071}
+--- !u!114 &1230619594
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1230619593}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1674114588}
+          m_MethodName: OnMouseOver
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1674114588}
+          m_MethodName: OnMouseDown
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  delegates: []
+--- !u!114 &1674114588 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114430548890392242, guid: f6ec2fcf441224ec188cba27984bf9c3,
+    type: 2}
+  m_PrefabInternal: {fileID: 1082297071}
+  m_Script: {fileID: 11500000, guid: cb6d43befac7248acaf5dd12f217da4a, type: 3}
 --- !u!1 &1863617326
 GameObject:
   m_ObjectHideFlags: 0
@@ -888,3 +749,159 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2037150195 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1707211356744000, guid: f6ec2fcf441224ec188cba27984bf9c3,
+    type: 2}
+  m_PrefabInternal: {fileID: 1082297071}
+--- !u!114 &2037150196
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2037150195}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1674114588}
+          m_MethodName: OnMouseOver
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1674114588}
+          m_MethodName: OnMouseDown
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  delegates: []
+--- !u!1 &2099211297 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1573812453611516, guid: f6ec2fcf441224ec188cba27984bf9c3,
+    type: 2}
+  m_PrefabInternal: {fileID: 1082297071}
+--- !u!114 &2099211298
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2099211297}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1674114588}
+          m_MethodName: OnMouseOver
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1674114588}
+          m_MethodName: OnMouseDown
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  delegates: []
+--- !u!1 &2119805884 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1206748176084476, guid: f6ec2fcf441224ec188cba27984bf9c3,
+    type: 2}
+  m_PrefabInternal: {fileID: 1082297071}
+--- !u!114 &2119805885
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2119805884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1674114588}
+          m_MethodName: OnMouseOver
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1674114588}
+          m_MethodName: OnMouseDown
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  delegates: []

@@ -143,7 +143,7 @@ da6395585166ad8e0db9515aea3e9468 Assembly-CSharp.dll:.BrickManager
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.TestRunner.dll:UnityEngine.TestTools.TestRunner.Callbacks.PlayModeRunnerCallback
 f02726adeff0a3ec5905565234b372da UnityEngine.TestRunner.dll:UnityEngine.TestTools.TestRunner.PlaymodeTestsController
 64eb32cc721b1cc68a91ed57461e188c UnityEngine.TestRunner.dll:UnityEngine.TestTools.TestRunner.Callbacks.RemoteTestResultSender
-7b16a814b76f5686a5a7aec4f94c0015 Assembly-CSharp.dll:.Paddle
+b77bca1e51044d9a014d4441f195a406 Assembly-CSharp.dll:.Paddle
 9e0ef5bf862444b5dc48b5a99554ce7c UnityEngine.GoogleAudioSpatializer.dll:UnityEngine.Experimental.Audio.Google.GvrAudioListenerExtension
 e0f7ffd5d5c2abe4b2e16569a21163da UnityEngine.GoogleAudioSpatializer.dll:UnityEngine.Experimental.Audio.Google.GvrAudioRoom
 67a5f2c97205d2e41a8ed7c7ce898f6e UnityEngine.GoogleAudioSpatializer.dll:UnityEngine.Experimental.Audio.Google.GvrAudioSoundfieldExtension
@@ -162,7 +162,7 @@ c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.Spa
 45f3431f0103c41611e8d4eec3d439df UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.SpatialMappingRenderer
 c155a394adca7150e655710872cdbd4f Assembly-CSharp.dll:.BrickRotator
 9de3a22eca9aefadba2d10d5987cefe3 UnityEngine.SpatialTracking.dll:UnityEngine.SpatialTracking.TrackedPoseDriver
+cb1b4e6348f85fe78698ef300aaacdfc Assembly-CSharp.dll:.BrickMover
 d4b0436e14ec80427472dcf81291df1a Assembly-CSharp.dll:.GameManager
 54e9f7d2c3ed2a1bb1789cca756f9c21 Assembly-CSharp.dll:.Ball
 f9ca08a32fa6f2f81ac0efc5e2d68cac Assembly-CSharp.dll:.BrickColor
-cb1b4e6348f85fe78698ef300aaacdfc Assembly-CSharp.dll:.BrickMover

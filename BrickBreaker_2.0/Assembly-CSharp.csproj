@@ -60,7 +60,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\ExtensionMethods.cs" />
+    <Compile Include="Assets\Proper Scripts\AudioManager.cs" />
     <Compile Include="Assets\Proper Scripts\Ball.cs" />
+    <Compile Include="Assets\Proper Scripts\BossManagerTest.cs" />
     <Compile Include="Assets\Proper Scripts\BrickColorTest.cs" />
     <Compile Include="Assets\Proper Scripts\BrickManagerTest.cs" />
     <Compile Include="Assets\Proper Scripts\BrickMover.cs" />
@@ -70,6 +72,7 @@
     <Compile Include="Assets\Proper Scripts\HighScoreManager.cs" />
     <Compile Include="Assets\Proper Scripts\Paddle.cs" />
     <Compile Include="Assets\Proper Scripts\PowerupManager.cs" />
+    <Compile Include="Assets\Proper Scripts\TextFileManager.cs" />
     <Compile Include="Assets\Scripts\BallManager.cs" />
     <Compile Include="Assets\Scripts\BlockerManager.cs" />
     <Compile Include="Assets\Scripts\BrickColor.cs" />
@@ -77,6 +80,7 @@
     <Compile Include="Assets\Scripts\PaddleController.cs" />
     <Compile Include="Assets\Scripts\PaddleTest.cs" />
     <None Include="Assets\Fonts\Pixel-art-Struct\license.txt" />
+    <None Include="Assets\Resources\ScoreKeeper.txt" />
     <None Include="Assets\Fonts\Pixel-art-Struct\readme.txt" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>/Users/ronicatanwar/GitHub/Brick_Breaker_2.0/BrickBreaker_2.0/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>

@@ -6,7 +6,7 @@ public class Paddle : MonoBehaviour
 {
     [Range(0,10)]
     public float paddleSpeed;
-    float clampXVal;
+    public float clampXVal;
 
     private Vector3 paddlePos;
 
@@ -18,8 +18,7 @@ public class Paddle : MonoBehaviour
         movePaddle = true;
         paddlePos = transform.position;
 
-        // Clamping the paddle along the x-axis based in the orthographic view of the camera.
-        clampXVal = ((Camera.main.orthographicSize * Camera.main.aspect) - (GetComponent<BoxCollider>().size.x * transform.localScale.x/2));
+        SetClamping();
 	}
 	
 	// Update is called once per frame
@@ -41,5 +40,11 @@ public class Paddle : MonoBehaviour
             Destroy(other.gameObject);
             GetComponent<PowerupManager>().InvokePowerUps(other.gameObject.name);
         }
+    }
+
+    public void SetClamping()
+    {
+        // Clamping the paddle along the x-axis based in the orthographic view of the camera.
+        clampXVal = ((Camera.main.orthographicSize * Camera.main.aspect) - (GetComponent<BoxCollider>().size.x * transform.localScale.x / 2)); 
     }
 }

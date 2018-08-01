@@ -7,30 +7,39 @@ public class BrickColorTest : MonoBehaviour
     BrickManagerTest bmTest;
     CanvasManager canvasManager;
     PowerupManager powerupManager;
+    AudioManager getAudioManager;
 
     public int colorCtr;
     public string matName;
 
-	// Use this for initialization
-	void Start () 
+    // Use this for initialization
+    void Awake()
     {
         bmTest = GameObject.Find("BrickManagerTest").GetComponent<BrickManagerTest>();
         canvasManager = GameObject.Find("GameCanvas").GetComponent<CanvasManager>();
         powerupManager = GameObject.Find("Paddle").GetComponent<PowerupManager>();
+        getAudioManager = GameObject.Find("AudioManager").GetComponent<AudioManager>();
 
         matName = GetComponent<MeshRenderer>().sharedMaterial.name;
 
         SetCounter();
-	}
+    }
 
     void SetCounter()
     {
-        for (int i = 0; i < bmTest.brickColors.Count;i++)
+        if(!bmTest.isBossLevel)
         {
-            if(bmTest.brickColors[i].name == matName)
+            for (int i = 0; i < bmTest.brickColors.Count; i++)
             {
-                colorCtr = i;
+                if (bmTest.brickColors[i].name == matName)
+                {
+                    colorCtr = i;
+                }
             }
+        }
+        else
+        {
+            colorCtr = 1;
         }
     }
 
@@ -43,19 +52,19 @@ public class BrickColorTest : MonoBehaviour
     {
         if(other.gameObject.name == "Ball")
         {
-            bmTest.hitAudio.Play();
+            getAudioManager.audioSource.PlayOneShot(getAudioManager.brickHit);
             colorCtr--;
             canvasManager.UpdateScore();
-            if(colorCtr < 0)
+            if(colorCtr <= 0)
             {
-                Vector3 brickPos = transform.localPosition;
+                Vector3 brickPos = transform.position;
                 Destroy(gameObject);
                 bmTest.DeleteFromList(gameObject);
 
                 float generatePowerUp = Random.Range(0f, 100f);
-                if(generatePowerUp < 20f)
+                if(generatePowerUp < 10f)
                 {
-                    int selectPU = Random.Range(0, 2);
+                    int selectPU = Random.Range(0, 3);
                     Instantiate(powerupManager.powerUps[selectPU], brickPos, Quaternion.identity);
                 }
 

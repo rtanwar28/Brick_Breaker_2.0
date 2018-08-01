@@ -592,6 +592,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paddleSpeed: 0.3
+  clampXVal: 0
   movePaddle: 0
 --- !u!54 &520250345
 Rigidbody:
@@ -1645,8 +1646,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 960677242}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.3362581, y: 4.2666655, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.6666666, z: 0.5}
+  m_LocalPosition: {x: 0.33, y: 5, z: 0}
+  m_LocalScale: {x: 0.5, y: 0.65, z: 0.5}
   m_Children: []
   m_Father: {fileID: 1727291436}
   m_RootOrder: 0
@@ -1663,7 +1664,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3290a1ce7ad13405781ef86a391f6f43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ballInitialVelocity: 300
+  ballInitialVelocity: 400
   isLaunched: 0
 --- !u!135 &960677245
 SphereCollider:
@@ -1692,7 +1693,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 1
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 64
   m_CollisionDetection: 0
 --- !u!23 &960677247
 MeshRenderer:
@@ -2758,6 +2759,9 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 72991eb90f69f4e53bc3d9d8de6a6f2a, type: 2}
   - {fileID: 2100000, guid: 89881b6e1733d4861993ff1886cc9e3e, type: 2}
   bricksList: []
+  bodyBricks: []
+  heartBrick: []
+  brickSwitch: 0
   hitAudio: {fileID: 1186810862}
 --- !u!4 &1186810861
 Transform:
@@ -3889,7 +3893,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a339b1da8c20049c1af01d87585cc4ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  paddleSpeed: 0.3
+  paddleSpeed: 0.5
+  clampXVal: 0
   movePaddle: 0
 --- !u!54 &1727291432
 Rigidbody:

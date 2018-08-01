@@ -7,7 +7,7 @@ public class BrickMover : MonoBehaviour
     // Transform values of the icon
     Transform icon;
     // Declaring the variables for the icon animation
-    float min, max, mul;
+    float min, max;
     public float distMin, distMax, pingPongSpeed;
 
     public bool invert;
@@ -18,7 +18,6 @@ public class BrickMover : MonoBehaviour
         icon = this.transform;
         min = icon.localPosition.x - distMin;
         max = icon.localPosition.x + distMax;
-        mul = 1f;
     }
 
     // Updating the rotation and position of the icon every frame.
@@ -26,12 +25,10 @@ public class BrickMover : MonoBehaviour
     {
         if (invert)
             icon.localPosition = new Vector3((Mathf.PingPong(Time.time * pingPongSpeed, max - min) + min).Remap(min, max, max, min),
-                                         icon.localPosition.y, icon.localPosition.z);
+                                              icon.localPosition.y, icon.localPosition.z);
 
         else
             icon.localPosition = new Vector3(Mathf.PingPong(Time.time * pingPongSpeed, max - min) + min,
-                                         icon.localPosition.y, icon.localPosition.z);
-
-
+                                             icon.localPosition.y, icon.localPosition.z);
     }
 }

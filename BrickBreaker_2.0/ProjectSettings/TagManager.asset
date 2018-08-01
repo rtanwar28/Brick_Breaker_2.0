@@ -7,6 +7,8 @@ TagManager:
   - brick
   - bricks
   - powerUp
+  - body_bricks
+  - heart_bricks
   layers:
   - Default
   - TransparentFX

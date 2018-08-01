@@ -13,6 +13,9 @@ public class Ball : MonoBehaviour
     CanvasManager canvasManager;
     GameManager gameManager;
     Paddle paddleScript;
+    AudioManager getAudioManager;
+
+    Vector3 originalPos, originalScale;
 
     // Use this for initialization
     void Awake()
@@ -21,6 +24,10 @@ public class Ball : MonoBehaviour
         canvasManager = GameObject.Find("GameCanvas").GetComponent<CanvasManager>();
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
         paddleScript = GameObject.Find("Paddle").GetComponent<Paddle>();
+        getAudioManager = GameObject.Find("AudioManager").GetComponent<AudioManager>();
+
+        originalPos = transform.localPosition;
+        originalScale = transform.localScale;
     }
 
     // Update is called once per frame
@@ -39,15 +46,37 @@ public class Ball : MonoBehaviour
         {
             ballRb.isKinematic = true;
         }
+
+        if(isLaunched)
+        {
+            // Rotating the ball
+            transform.Rotate(new Vector3(15f, 30f, 45f) * Time.deltaTime);
+        }
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        canvasManager.UpdateLives();
-
         if (other.gameObject.tag == "Respawn")
         {
+            canvasManager.UpdateLives();
+
             StartCoroutine(gameManager.ReloadLevel());
+            getAudioManager.audioSource.PlayOneShot(getAudioManager.ballRespawn);
         }
     }
+
+    private void OnCollisionEnter(Collision other)
+    {
+        if(other.gameObject.name == "Paddle")
+        {
+            getAudioManager.audioSource.PlayOneShot(getAudioManager.paddleHit);
+        }
+    }
+
+    public void SetBallProperties(GameObject respawnedBall)
+    {
+        respawnedBall.transform.localPosition = originalPos;
+        respawnedBall.transform.localScale = originalScale;
+    }
+
 }

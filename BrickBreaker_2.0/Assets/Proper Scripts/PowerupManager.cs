@@ -7,11 +7,16 @@ public class PowerupManager : MonoBehaviour
     public GameObject[] powerUps;
 
     CanvasManager canvasManager;
+    GameObject myPaddle;
+
+    Vector3 myPaddleScale, newPaddleScale;
 
 	// Use this for initialization
 	void Start () 
     {
         canvasManager = GameObject.Find("GameCanvas").GetComponent<CanvasManager>();
+        myPaddle = GameObject.Find("Paddle");
+        myPaddleScale = myPaddle.transform.localScale;
 	}
 	
 	// Update is called once per frame
@@ -34,10 +39,25 @@ public class PowerupManager : MonoBehaviour
     void PaddleUp()
     {
         Debug.Log("Increase paddle size");
+        newPaddleScale = new Vector3(myPaddle.transform.localScale.x * 2, myPaddle.transform.localScale.y, myPaddle.transform.localScale.z);
+        StartCoroutine(ScalePaddle(newPaddleScale, Random.Range(5f,10f)));
     }
 
     void PaddleDown()
     {
         Debug.Log("Decrease paddle size");
+        newPaddleScale = new Vector3(myPaddle.transform.localScale.x / 2, myPaddle.transform.localScale.y, myPaddle.transform.localScale.z);
+        StartCoroutine(ScalePaddle(newPaddleScale, Random.Range(5f, 10f)));
+    }
+
+    IEnumerator ScalePaddle(Vector3 paddleScaleX, float time)
+    {
+        // In the IEnumerator to scale paddle
+        myPaddle.transform.localScale = Vector3.Lerp(myPaddle.transform.localScale, paddleScaleX, 2f);
+        myPaddle.GetComponent<Paddle>().SetClamping();
+        yield return new WaitForSeconds(5f);
+        // Now returing paddle to normal
+        myPaddle.transform.localScale = Vector3.Lerp(myPaddle.transform.localScale, myPaddleScale, 2f);
+        myPaddle.GetComponent<Paddle>().SetClamping();
     }
 }
