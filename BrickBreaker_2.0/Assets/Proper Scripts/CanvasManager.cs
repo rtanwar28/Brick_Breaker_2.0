@@ -28,7 +28,7 @@ public class CanvasManager : MonoBehaviour
 
     void SetValues()
     {
-        livesVal = 20;
+        livesVal = 1;
         lives.text = livesVal.ToString();
     }
 	
@@ -39,7 +39,7 @@ public class CanvasManager : MonoBehaviour
         {
             GameObject.Find("Paddle").GetComponent<Paddle>().movePaddle = false;
             gameOverPanel.SetActive(true);
-
+            GameObject.Find("GameManager").GetComponent<GameManager>().isGameOver = true;
             finalScore.text = "You Scored: " + scoreVal;
         }
 
@@ -58,7 +58,7 @@ public class CanvasManager : MonoBehaviour
 
     public void UpdateScore()
     {
-        scoreVal += 50;
+        scoreVal += 5;
         score.text = scoreVal.ToString("000");
     }
 

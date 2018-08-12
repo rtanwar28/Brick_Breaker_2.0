@@ -62,12 +62,11 @@ public class BrickColorTest : MonoBehaviour
                 bmTest.DeleteFromList(gameObject);
 
                 float generatePowerUp = Random.Range(0f, 100f);
-                if(generatePowerUp < 10f)
+                if(generatePowerUp < 5f)
                 {
                     int selectPU = Random.Range(0, 3);
                     Instantiate(powerupManager.powerUps[selectPU], brickPos, Quaternion.identity);
                 }
-
             }
             else
             {

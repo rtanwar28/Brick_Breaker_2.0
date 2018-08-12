@@ -13,10 +13,13 @@ public class GameManager : MonoBehaviour
     public GameObject gameCanvas, nextLevelPanel, mainMenuCanvas;
 
     AudioManager getAudioManager;
+    TextFileManager fileManager;
 
-    //public HighScoreManager highScoreManager;
-    public Text highestScore;
+    int highScoreInt;
     private object yPaddle;
+
+    public bool isGameOver;
+    public int finalScore;
 
     private void Awake()
     {
@@ -27,9 +30,7 @@ public class GameManager : MonoBehaviour
             Destroy(gameObject);
         }
 
-        DontDestroyOnLoad(highestScore);
-        highestScore = GameObject.Find("HighestScore").GetComponent<Text>();
-        highestScore.text = PlayerPrefs.GetInt("HighestScore", 0).ToString("0000");
+        isGameOver = false;
 
         // Getting reference to the audio manager script
         getAudioManager = GameObject.Find("AudioManager").GetComponent<AudioManager>();
@@ -50,12 +51,13 @@ public class GameManager : MonoBehaviour
     public void MainMenu()
     {
         SceneManager.LoadScene("MainMenu");
-        int score = gameCanvas.GetComponent<CanvasManager>().scoreVal;
+        finalScore = gameCanvas.GetComponent<CanvasManager>().scoreVal;
 
-        if (score > PlayerPrefs.GetInt("HighestScore", 0))
+        if (finalScore > GetComponent<HighScoreManager>().highScore_Int && isGameOver)
         {
-            PlayerPrefs.SetInt("HighestScore", score);
-            highestScore.text = score.ToString();
+            GetComponent<HighScoreManager>().isSetScore = true;
+
+            isGameOver = false;
         }
 
         Time.timeScale = 1f;

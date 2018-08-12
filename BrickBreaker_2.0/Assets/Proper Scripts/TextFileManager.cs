@@ -6,9 +6,8 @@ using System.IO;
 public class TextFileManager : MonoBehaviour
 {
     // Path of the text file
-    string filePath;
-
-    public string writeHere;
+    public string filePath;
+    public string fileData;
 
     StreamReader reader;
     StreamWriter writer;
@@ -16,32 +15,34 @@ public class TextFileManager : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        // filePath = Application.persistentDataPath + Path.DirectorySeparatorChar + "/Assets/Resources/ScoreKeeper.txt";
+        // Get the file path
+        filePath = Application.dataPath + Path.DirectorySeparatorChar + "Resources" + Path.DirectorySeparatorChar + "ScoreKeeper.txt";
 
-        filePath = "Assets/Resources/ScoreKeeper.txt";
+        // Reading the data in the text file
+        fileData = File.ReadAllText(filePath);
+
+        Debug.Log("File Data: " + fileData);
 
         Debug.Log("File Path: " + filePath);
-        Debug.Log("Application Persitant Data Path: " + Application.persistentDataPath);
-        Debug.Log("Path Directory Seperator Char: " + Path.DirectorySeparatorChar);
 
-        reader = new StreamReader(filePath);
-        Debug.Log("Read to end: " + reader.ReadToEnd());
+        //// Reading the file
+        //reader = new StreamReader(filePath + "ScoreKeeper.txt");
+        //Debug.Log("Read to end: " + reader.ReadToEnd());
 
-
+        //reader.Close();
     }
 
 
     // Update is called once per frame
-    void Update()
+    public void UpdateFile(string scoreString)
     {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            Debug.Log("i wrote: " + writeHere);
-            // write in to the file and display
-            writer = new StreamWriter(filePath, true);
-           // writer.WriteLine(writeHere);
-            File.WriteAllText(filePath, writeHere);
+        File.Create("filePath").Dispose();
+        // write in to the file and display
+        writer = new StreamWriter(filePath, true);
 
-        }
+        writer.WriteLine(scoreString);
+
+        writer.Close();
+
     }
 }
