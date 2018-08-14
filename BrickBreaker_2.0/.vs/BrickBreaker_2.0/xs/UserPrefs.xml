@@ -1,10 +1,10 @@
 ﻿<Properties StartupConfiguration="{B6E44948-DACB-2743-C6FF-6EFA161C3B77}|">
   <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Proper Scripts/GameManager.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Proper Scripts/BrickColorTest.cs">
     <Files>
-      <File FileName="Assets/Proper Scripts/GameManager.cs" Line="84" Column="9" />
-      <File FileName="Assets/Proper Scripts/BrickManagerTest.cs" Line="72" Column="10" />
-      <File FileName="Assets/Proper Scripts/CanvasManager.cs" Line="69" Column="10" />
+      <File FileName="Assets/Proper Scripts/GameManager.cs" Line="190" Column="27" />
+      <File FileName="Assets/InstructionsManager.cs" Line="33" Column="38" />
+      <File FileName="Assets/Proper Scripts/BrickColorTest.cs" Line="83" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

@@ -51,6 +51,7 @@ public class Ball : MonoBehaviour
         {
             // Rotating the ball
             transform.Rotate(new Vector3(15f, 30f, 45f) * Time.deltaTime);
+
         }
     }
 

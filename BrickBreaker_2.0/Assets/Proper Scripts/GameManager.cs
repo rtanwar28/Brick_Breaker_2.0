@@ -10,11 +10,10 @@ public class GameManager : MonoBehaviour
     public int levelCtr = 1;
     public int maxLevel = 5;
 
-    public GameObject gameCanvas, nextLevelPanel, mainMenuCanvas;
+    public GameObject gameCanvas, nextLevelPanel, mainMenuCanvas, settingsCanvas, instructionsCanvas;
 
     AudioManager getAudioManager;
     TextFileManager fileManager;
-   // BrickManagerTest brickManager;
 
     int highScoreInt;
     private object yPaddle;
@@ -36,8 +35,6 @@ public class GameManager : MonoBehaviour
 
         // Getting reference to the audio manager script
         getAudioManager = GameObject.Find("AudioManager").GetComponent<AudioManager>();
-
-       // brickManager = GameObject.Find("BrickManagerTest").GetComponent<BrickManagerTest>();
     }
 
     // if mouse is hovering
@@ -55,7 +52,7 @@ public class GameManager : MonoBehaviour
     public void MainMenu()
     {
         SceneManager.LoadScene("MainMenu");
-
+        getAudioManager.SettingAudioClip(getAudioManager.menuAudio);
         finalScore = gameCanvas.GetComponent<CanvasManager>().scoreVal;
 
         if (finalScore > GetComponent<HighScoreManager>().highScore_Int && isGameOver)
@@ -84,6 +81,15 @@ public class GameManager : MonoBehaviour
 
         SceneManager.LoadScene("Level_" + levelCtr);
         levelCtr++;
+
+        if ((levelCtr - 1) % 5 != 0)
+        {
+            getAudioManager.SettingAudioClip(getAudioManager.levelAudio);
+        }
+        else
+        {
+            getAudioManager.SettingAudioClip(getAudioManager.bossAudio);
+        }
     }
 
     public void NextLevel()
@@ -99,6 +105,8 @@ public class GameManager : MonoBehaviour
         Time.timeScale = 1f;
         GameObject.Find("GameCanvas").GetComponent<CanvasManager>().isPause = false;
         GameObject.Find("GameCanvas").GetComponent<CanvasManager>().pausePanel.SetActive(false);
+
+        getAudioManager.audioSource.Play();
     }
 
     public void RestartLevel()
@@ -111,6 +119,8 @@ public class GameManager : MonoBehaviour
         GameObject.Find("GameCanvas").GetComponent<CanvasManager>().pausePanel.SetActive(false);
         // This line is what makes resume and restart different
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+
+        getAudioManager.audioSource.Play();
     }
 
     void ResetGameValues()
@@ -123,7 +133,6 @@ public class GameManager : MonoBehaviour
         gameCanvas.GetComponent<CanvasManager>().score.text = gameCanvas.GetComponent<CanvasManager>().scoreVal.ToString();
         gameCanvas.GetComponent<CanvasManager>().livesVal = 10;
         gameCanvas.GetComponent<CanvasManager>().lives.text = gameCanvas.GetComponent<CanvasManager>().livesVal.ToString();
-       // gameCanvas.GetComponent<CanvasManager>().isPause = false;
 
     }
 
@@ -158,6 +167,27 @@ public class GameManager : MonoBehaviour
         // Wait for 1 second before the paddle can move
         yield return new WaitForSeconds(1);
         myPaddle.GetComponent<Paddle>().movePaddle = true;
+    }
+
+    // Enabling and disabling canvases in the main menu
+
+    public void DisplaySettings()
+    {
+        mainMenuCanvas.SetActive(false);
+        settingsCanvas.SetActive(true);
+    }
+
+    public void DisplayMenu()
+    {
+        mainMenuCanvas.SetActive(true);
+        instructionsCanvas.SetActive(false);
+        settingsCanvas.SetActive(false);
+    }
+
+    public void DisplayInstructions()
+    {
+        mainMenuCanvas.SetActive(false);
+        instructionsCanvas.SetActive(true);
     }
 }
 

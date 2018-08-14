@@ -17,7 +17,7 @@ public class Paddle : MonoBehaviour
     {
         movePaddle = true;
         paddlePos = transform.position;
-
+        paddleSpeed = 0.7f;
         SetClamping();
 	}
 	

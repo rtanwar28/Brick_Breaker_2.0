@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657868, g: 0.49641263, b: 0.5748171, a: 1}
+  m_IndirectSpecularColor: {r: 0.44824868, g: 0.49827576, b: 0.575583, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -51,7 +51,7 @@ LightmapSettings:
     m_IndirectOutputScale: 1
     m_AlbedoBoost: 1
     m_TemporalCoherenceThreshold: 1
-    m_EnvironmentLightingMode: 0
+    m_EnvironmentLightingMode: 1
     m_EnableBakedLightmaps: 1
     m_EnableRealtimeLightmaps: 1
   m_LightmapEditorSettings:
@@ -89,7 +89,7 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaIndirect: 2
     m_PVRFilteringAtrousPositionSigmaAO: 1
     m_ShowResolutionOverlay: 1
-  m_LightingDataAsset: {fileID: 112000002, guid: 009affcc91c324265986884d254e33cc,
+  m_LightingDataAsset: {fileID: 112000002, guid: 91d652f452d0148789ecb6a48c6c66a3,
     type: 2}
   m_UseShadowmask: 1
 --- !u!196 &4
@@ -9194,8 +9194,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   powerUps:
   - {fileID: 1714312346478230, guid: 17812f815fc0c4c8c84817426ad8b2fe, type: 2}
-  - {fileID: 1513460308528804, guid: 555bb7ef075a149ed8c5304f2dde6428, type: 2}
-  - {fileID: 1552567118318782, guid: 685ec299a6cd245ff8c14082c0987661, type: 2}
+  - {fileID: 1400675185835938, guid: eff00df46c10043b1919af7b2dbf7aa0, type: 2}
+  - {fileID: 1897382502295414, guid: e0dc70940a4434ebfbe3accce13ded30, type: 2}
 --- !u!114 &651666901
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9819,7 +9819,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!108 &707229942
 Light:
   m_ObjectHideFlags: 0
@@ -13252,8 +13252,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 897878325}
   m_LocalRotation: {x: 0, y: 0.7071068, z: -0.7071068, w: 0}
-  m_LocalPosition: {x: 1.07, y: 0.262, z: 1}
-  m_LocalScale: {x: 2.01479, y: 1, z: 1.0524989}
+  m_LocalPosition: {x: 1, y: 0.25, z: 1}
+  m_LocalScale: {x: 2, y: 1, z: 1.05}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 6
@@ -16195,13 +16195,14 @@ GameObject:
   - component: {fileID: 1098564275}
   - component: {fileID: 1098564274}
   - component: {fileID: 1098564273}
+  - component: {fileID: 1098564277}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!81 &1098564273
 AudioListener:
   m_ObjectHideFlags: 0
@@ -16265,6 +16266,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1098564277
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1098564272}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7ab7f51ddb4e463681fa2b66bbdc80e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cloneObjects: []
 --- !u!1 &1117367063
 GameObject:
   m_ObjectHideFlags: 0
@@ -18107,8 +18120,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1186810859}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 0.7, z: -0.1}
+  m_LocalScale: {x: 0.9, y: 0.9, z: 1}
   m_Children:
   - {fileID: 1779386761}
   - {fileID: 870496315}
@@ -18545,6 +18558,8 @@ MonoBehaviour:
   heartBrick: []
   brickSwitch: 0
   isBossLevel: 0
+  brickBurst: {fileID: 198007292167932992, guid: c095b67c50a6a4d33bad49a80b27b8db,
+    type: 2}
 --- !u!1 &1206457024
 GameObject:
   m_ObjectHideFlags: 0

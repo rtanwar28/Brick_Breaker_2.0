@@ -36,16 +36,14 @@ public class PowerupManager : MonoBehaviour
         canvasManager.PowerUpLives();
     }
 
-    void PaddleUp()
+    void Increase()
     {
-        Debug.Log("Increase paddle size");
         newPaddleScale = new Vector3(myPaddle.transform.localScale.x * 2, myPaddle.transform.localScale.y, myPaddle.transform.localScale.z);
         StartCoroutine(ScalePaddle(newPaddleScale, Random.Range(5f,10f)));
     }
 
-    void PaddleDown()
+    void Decrease()
     {
-        Debug.Log("Decrease paddle size");
         newPaddleScale = new Vector3(myPaddle.transform.localScale.x / 2, myPaddle.transform.localScale.y, myPaddle.transform.localScale.z);
         StartCoroutine(ScalePaddle(newPaddleScale, Random.Range(5f, 10f)));
     }

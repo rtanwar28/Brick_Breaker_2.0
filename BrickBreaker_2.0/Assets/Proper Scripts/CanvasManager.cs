@@ -66,6 +66,7 @@ public class CanvasManager : MonoBehaviour
         {
             pausePanel.SetActive(true);
             Time.timeScale = 0f;
+            GameObject.Find("AudioManager").GetComponent<AudioManager>().audioSource.Pause();
         }
 
         if(isRestartScore)

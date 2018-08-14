@@ -598,8 +598,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   powerUps:
   - {fileID: 1714312346478230, guid: 17812f815fc0c4c8c84817426ad8b2fe, type: 2}
-  - {fileID: 1513460308528804, guid: 555bb7ef075a149ed8c5304f2dde6428, type: 2}
-  - {fileID: 1552567118318782, guid: 685ec299a6cd245ff8c14082c0987661, type: 2}
+  - {fileID: 1400675185835938, guid: eff00df46c10043b1919af7b2dbf7aa0, type: 2}
+  - {fileID: 1897382502295414, guid: e0dc70940a4434ebfbe3accce13ded30, type: 2}
 --- !u!114 &260450147
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -701,7 +701,7 @@ Transform:
   m_Children:
   - {fileID: 454286252}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &264857057
 GameObject:
@@ -886,7 +886,7 @@ Transform:
   m_LocalScale: {x: 2.0147898, y: 1, z: 1.0524989}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 90, y: 180, z: 0}
 --- !u!1 &297842953
 GameObject:
@@ -3207,7 +3207,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1540343951
 GameObject:
@@ -3826,6 +3826,8 @@ MonoBehaviour:
   heartBrick: []
   brickSwitch: 0
   isBossLevel: 1
+  brickBurst: {fileID: 198007292167932992, guid: c095b67c50a6a4d33bad49a80b27b8db,
+    type: 2}
 --- !u!4 &1880804353
 Transform:
   m_ObjectHideFlags: 0
@@ -3853,7 +3855,7 @@ Transform:
   - {fileID: 474981538}
   - {fileID: 1412440278}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &1880804354
 AudioSource:
@@ -3980,7 +3982,7 @@ Transform:
   - {fileID: 199362477}
   - {fileID: 2129694977}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1932592718
 GameObject:
@@ -4320,13 +4322,14 @@ GameObject:
   - component: {fileID: 2093079698}
   - component: {fileID: 2093079697}
   - component: {fileID: 2093079696}
+  - component: {fileID: 2093079700}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!81 &2093079696
 AudioListener:
   m_ObjectHideFlags: 0
@@ -4390,6 +4393,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2093079700
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2093079695}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7ab7f51ddb4e463681fa2b66bbdc80e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cloneObjects: []
 --- !u!1 &2129694976
 GameObject:
   m_ObjectHideFlags: 0

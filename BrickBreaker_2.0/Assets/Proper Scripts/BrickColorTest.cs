@@ -59,7 +59,11 @@ public class BrickColorTest : MonoBehaviour
             if(colorCtr <= 0)
             {
                 Vector3 brickPos = transform.position;
+
+                Instantiate(bmTest.brickBurst, brickPos, Quaternion.Euler(0f, 0f, 94f));
+
                 Destroy(gameObject);
+
                 bmTest.DeleteFromList(gameObject);
 
                 float generatePowerUp = Random.Range(0f, 100f);

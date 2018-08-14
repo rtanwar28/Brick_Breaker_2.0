@@ -60,6 +60,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\ExtensionMethods.cs" />
+    <Compile Include="Assets\InstructionsManager.cs" />
     <Compile Include="Assets\Proper Scripts\AudioManager.cs" />
     <Compile Include="Assets\Proper Scripts\Ball.cs" />
     <Compile Include="Assets\Proper Scripts\BossManagerTest.cs" />
@@ -72,6 +73,8 @@
     <Compile Include="Assets\Proper Scripts\HighScoreManager.cs" />
     <Compile Include="Assets\Proper Scripts\Paddle.cs" />
     <Compile Include="Assets\Proper Scripts\PowerupManager.cs" />
+    <Compile Include="Assets\Proper Scripts\PrefabsDestroyer.cs" />
+    <Compile Include="Assets\Proper Scripts\SettingsManager.cs" />
     <Compile Include="Assets\Proper Scripts\TextFileManager.cs" />
     <Compile Include="Assets\Scripts\BallManager.cs" />
     <Compile Include="Assets\Scripts\BlockerManager.cs" />

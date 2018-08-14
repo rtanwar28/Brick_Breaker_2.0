@@ -19,6 +19,8 @@ public class BrickManagerTest : MonoBehaviour
     CanvasManager canvasManager;
     GameManager gameManager;
 
+    public ParticleSystem brickBurst;
+
     private void Awake()
     {
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();

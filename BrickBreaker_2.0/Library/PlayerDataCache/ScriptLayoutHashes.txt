@@ -1,6 +1,6 @@
 OSXStandalone
 PlayerPath?
-/Users/ronicatanwar/GitHub/Brick_Breaker_2.0/BrickBreaker_2.0/HighScore.app
+/Users/ronicatanwar/GitHub/Brick_Breaker_2.0/BrickBreaker_2.0/BrickBreaker.app
 SceneListBegin?
 Assets/Scenes/MainMenu.unity
 Assets/Scenes/Level_1.unity
@@ -21,7 +21,9 @@ ff05dcdf90651c3d98a9cad3df5e471e UnityEngine.Timeline.dll:UnityEngine.Timeline.C
 30afa8783a8bbee2e465ec9ce1efaee2 UnityEngine.Timeline.dll:UnityEngine.Timeline.GroupTrack
 30afa8783a8bbee2e465ec9ce1efaee2 UnityEngine.Timeline.dll:UnityEngine.Timeline.PlayableTrack
 607d64d2c4bc76ac9876e6f7b9cc7edf UnityEngine.Timeline.dll:UnityEngine.Timeline.TimelineAsset
-b4a743657e6b1f5ed7125436cd36540d Assembly-CSharp.dll:.CanvasManager
+dd281ff274c724bab147d98d46c0c5a3 Assembly-CSharp.dll:.SettingsManager
+9240e4dde05029021a2c2d5a6c0ae3fd Assembly-CSharp.dll:.CanvasManager
+27833a73578e2f2d9e6de41564249089 Assembly-CSharp.dll:.PrefabsDestroyer
 a35dc9cca2faebc5f5f1aeb9e8e47bbe UnityEngine.UI.dll:UnityEngine.UI.AspectRatioFitter
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.UI.dll:UnityEngine.EventSystems.BaseInput
 49cd62a578efc0a599b810a2b66cd49c UnityEngine.UI.dll:UnityEngine.UI.Button
@@ -141,7 +143,7 @@ e9bdabf9265d758d56f01bb188916fa8 UnityEngine.Networking.dll:UnityEngine.Networki
 73843688b51256aed059f049c540bca8 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransformChild
 528ea1fd7c01796fc60c4e2f172ea229 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransformVisualizer
 da6395585166ad8e0db9515aea3e9468 Assembly-CSharp.dll:.BrickManager
-c31165dc18c43d433da6ee08ad36a810 Assembly-CSharp.dll:.AudioManager
+0c40df20d8db190e6c61b2aa25c97801 Assembly-CSharp.dll:.AudioManager
 bf4607a6500b8617753b3f0d1ea68197 Assembly-CSharp.dll:.HighScoreManager
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.TestRunner.dll:UnityEngine.TestTools.TestRunner.Callbacks.PlayModeRunnerCallback
 f02726adeff0a3ec5905565234b372da UnityEngine.TestRunner.dll:UnityEngine.TestTools.TestRunner.PlaymodeTestsController
@@ -157,7 +159,7 @@ e0f7ffd5d5c2abe4b2e16569a21163da UnityEngine.GoogleAudioSpatializer.dll:UnityEng
 67a5f2c97205d2e41a8ed7c7ce898f6e UnityEngine.GoogleAudioSpatializer.dll:UnityEngine.Experimental.Audio.Google.GvrAudioSourceExtension
 d987728b46686fbf1bda7ef812b4baff Assembly-CSharp.dll:.BlockerManager
 c735f7b1928711e42888a9eb4297e53e Assembly-CSharp.dll:.BallManager
-462d218f9c8e14398149048d7b561ed7 Assembly-CSharp.dll:.BrickManagerTest
+827a3faf9c02237b872caf11f1c6f156 Assembly-CSharp.dll:.BrickManagerTest
 bc68edb0af574bf79f9550ead8ebae5c UnityEngine.HoloLens.dll:UnityEngine.Audio.AudioSpatializerMicrosoft
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.HoloLens.dll:UnityEngine.EventSystems.HoloLensInput
 463516d5b5fe8e67a0a24c48f2095b04 UnityEngine.HoloLens.dll:UnityEngine.EventSystems.HoloLensInputModule
@@ -166,6 +168,7 @@ c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.Spa
 c155a394adca7150e655710872cdbd4f Assembly-CSharp.dll:.BrickRotator
 9de3a22eca9aefadba2d10d5987cefe3 UnityEngine.SpatialTracking.dll:UnityEngine.SpatialTracking.TrackedPoseDriver
 cb1b4e6348f85fe78698ef300aaacdfc Assembly-CSharp.dll:.BrickMover
-f4b61dfd620b9ce54d5b1808889bcd15 Assembly-CSharp.dll:.GameManager
+e22f9ce5529ad54cdc037e07d2723308 Assembly-CSharp.dll:.GameManager
 54e9f7d2c3ed2a1bb1789cca756f9c21 Assembly-CSharp.dll:.Ball
 f9ca08a32fa6f2f81ac0efc5e2d68cac Assembly-CSharp.dll:.BrickColor
+66065abfc6afb94bcbd928ed27a95458 Assembly-CSharp.dll:.InstructionsManager
