@@ -2,8 +2,9 @@
   <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Proper Scripts/GameManager.cs">
     <Files>
-      <File FileName="Assets/Proper Scripts/GameManager.cs" Line="54" Column="72" />
-      <File FileName="Assets/Proper Scripts/HighScoreManager.cs" Line="9" Column="33" />
+      <File FileName="Assets/Proper Scripts/GameManager.cs" Line="84" Column="9" />
+      <File FileName="Assets/Proper Scripts/BrickManagerTest.cs" Line="72" Column="10" />
+      <File FileName="Assets/Proper Scripts/CanvasManager.cs" Line="69" Column="10" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

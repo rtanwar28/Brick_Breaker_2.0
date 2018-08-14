@@ -31,7 +31,7 @@ public class BossManagerTest: MonoBehaviour
             brickObj.bodyBricks.Remove(brickObj.bodyBricks[i]);
             yield return new WaitForSeconds(50f);
             // Updating the score
-            GameObject.Find("GameCanvas").GetComponent<CanvasManager>().scoreVal = GameObject.Find("GameCanvas").GetComponent<CanvasManager>().scoreVal + (brickObj.bodyBricks.Count * 50);
+            GameObject.Find("GameCanvas").GetComponent<CanvasManager>().scoreVal = GameObject.Find("GameCanvas").GetComponent<CanvasManager>().scoreVal + (brickObj.bodyBricks.Count * 2);
             GameObject.Find("GameCanvas").GetComponent<CanvasManager>().score.text = GameObject.Find("GameCanvas").GetComponent<CanvasManager>().scoreVal.ToString("000");
         }
 

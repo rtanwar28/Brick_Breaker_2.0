@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class BrickManagerTest : MonoBehaviour 
 {
@@ -11,6 +12,7 @@ public class BrickManagerTest : MonoBehaviour
     // For boss levels
     public List<GameObject> bodyBricks, heartBrick;
     public bool brickSwitch;
+
     // To check if boss level or not
     public bool isBossLevel;
 
@@ -56,16 +58,17 @@ public class BrickManagerTest : MonoBehaviour
 
     void Update()
     {
-        if(bricksList.Count == 0 && !isBossLevel)
+        if (bricksList.Count == 0 && !isBossLevel)
         {
             GameObject.Find("Paddle").GetComponent<Paddle>().movePaddle = false;
+
             canvasManager.nextLevelPanel.SetActive(true);
         }
 
         else if (bodyBricks.Count == 0 && isBossLevel)
         {
             GameObject.Find("Paddle").GetComponent<Paddle>().movePaddle = false;
-            canvasManager.nextLevelPanel.SetActive(true);
+            canvasManager.isFinalLevel = true;
         }
 
         else

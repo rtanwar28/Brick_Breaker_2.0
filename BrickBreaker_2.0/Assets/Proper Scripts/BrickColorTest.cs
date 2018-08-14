@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class BrickColorTest : MonoBehaviour 
 {
+    // Reference to other class/scripts
     BrickManagerTest bmTest;
     CanvasManager canvasManager;
     PowerupManager powerupManager;

@@ -169,7 +169,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 206b7ff1600404bcd9fb22c7de41e971, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  colorCtr: 0
+  colorCtr: 3
   matName: 
 --- !u!23 &51596615
 MeshRenderer:
@@ -319,7 +319,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 206b7ff1600404bcd9fb22c7de41e971, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  colorCtr: 0
+  colorCtr: 3
   matName: 
 --- !u!23 &198721060
 MeshRenderer:
@@ -420,7 +420,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 206b7ff1600404bcd9fb22c7de41e971, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  colorCtr: 0
+  colorCtr: 4
   matName: 
 --- !u!23 &248937236
 MeshRenderer:
@@ -615,7 +615,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 206b7ff1600404bcd9fb22c7de41e971, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  colorCtr: 0
+  colorCtr: 4
   matName: 
 --- !u!23 &410731104
 MeshRenderer:
@@ -716,7 +716,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 206b7ff1600404bcd9fb22c7de41e971, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  colorCtr: 0
+  colorCtr: 4
   matName: 
 --- !u!23 &463473177
 MeshRenderer:
@@ -949,7 +949,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 206b7ff1600404bcd9fb22c7de41e971, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  colorCtr: 0
+  colorCtr: 4
   matName: 
 --- !u!23 &531893269
 MeshRenderer:
@@ -1050,7 +1050,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 206b7ff1600404bcd9fb22c7de41e971, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  colorCtr: 0
+  colorCtr: 5
   matName: 
 --- !u!23 &587152442
 MeshRenderer:
@@ -1138,7 +1138,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 206b7ff1600404bcd9fb22c7de41e971, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  colorCtr: 0
+  colorCtr: 2
   matName: 
 --- !u!23 &602497711
 MeshRenderer:
@@ -1239,7 +1239,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 206b7ff1600404bcd9fb22c7de41e971, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  colorCtr: 0
+  colorCtr: 2
   matName: 
 --- !u!23 &609746249
 MeshRenderer:
@@ -1353,7 +1353,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 206b7ff1600404bcd9fb22c7de41e971, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  colorCtr: 0
+  colorCtr: 3
   matName: 
 --- !u!23 &617302520
 MeshRenderer:
@@ -1454,7 +1454,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 206b7ff1600404bcd9fb22c7de41e971, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  colorCtr: 0
+  colorCtr: 4
   matName: 
 --- !u!23 &643816273
 MeshRenderer:
@@ -1696,7 +1696,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 206b7ff1600404bcd9fb22c7de41e971, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  colorCtr: 0
+  colorCtr: 4
   matName: 
 --- !u!23 &692117382
 MeshRenderer:
@@ -1898,7 +1898,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 206b7ff1600404bcd9fb22c7de41e971, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  colorCtr: 0
+  colorCtr: 2
   matName: 
 --- !u!23 &712766433
 MeshRenderer:
@@ -2011,8 +2011,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1, y: 1, z: 60}
+  m_Center: {x: 0, y: 0, z: -0.5}
 --- !u!23 &837519629
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2110,7 +2110,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 206b7ff1600404bcd9fb22c7de41e971, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  colorCtr: 0
+  colorCtr: 4
   matName: 
 --- !u!23 &859772389
 MeshRenderer:
@@ -2285,7 +2285,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 206b7ff1600404bcd9fb22c7de41e971, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  colorCtr: 0
+  colorCtr: 2
   matName: 
 --- !u!23 &906089253
 MeshRenderer:
@@ -2399,7 +2399,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 206b7ff1600404bcd9fb22c7de41e971, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  colorCtr: 0
+  colorCtr: 4
   matName: 
 --- !u!23 &916582888
 MeshRenderer:
@@ -2487,7 +2487,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 206b7ff1600404bcd9fb22c7de41e971, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  colorCtr: 0
+  colorCtr: 1
   matName: 
 --- !u!23 &970193818
 MeshRenderer:
@@ -2719,7 +2719,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1098564272}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.47, z: -10}
+  m_LocalPosition: {x: 0, y: 0.5, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2861,7 +2861,7 @@ MonoBehaviour:
   bodyBricks: []
   heartBrick: []
   brickSwitch: 0
-  hitAudio: {fileID: 1186810862}
+  isBossLevel: 0
 --- !u!4 &1186810861
 Transform:
   m_ObjectHideFlags: 0
@@ -3132,7 +3132,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 206b7ff1600404bcd9fb22c7de41e971, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  colorCtr: 0
+  colorCtr: 3
   matName: 
 --- !u!23 &1212729786
 MeshRenderer:
@@ -3343,7 +3343,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 206b7ff1600404bcd9fb22c7de41e971, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  colorCtr: 0
+  colorCtr: 3
   matName: 
 --- !u!23 &1240720553
 MeshRenderer:
@@ -3444,7 +3444,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 206b7ff1600404bcd9fb22c7de41e971, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  colorCtr: 0
+  colorCtr: 3
   matName: 
 --- !u!23 &1290585166
 MeshRenderer:
@@ -3545,7 +3545,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 206b7ff1600404bcd9fb22c7de41e971, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  colorCtr: 0
+  colorCtr: 5
   matName: 
 --- !u!23 &1307706500
 MeshRenderer:
@@ -3646,7 +3646,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 206b7ff1600404bcd9fb22c7de41e971, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  colorCtr: 0
+  colorCtr: 4
   matName: 
 --- !u!23 &1347937979
 MeshRenderer:
@@ -3734,7 +3734,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 206b7ff1600404bcd9fb22c7de41e971, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  colorCtr: 0
+  colorCtr: 1
   matName: 
 --- !u!23 &1363615508
 MeshRenderer:
@@ -3848,7 +3848,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 206b7ff1600404bcd9fb22c7de41e971, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  colorCtr: 0
+  colorCtr: 3
   matName: 
 --- !u!23 &1385738032
 MeshRenderer:
@@ -4064,7 +4064,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 206b7ff1600404bcd9fb22c7de41e971, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  colorCtr: 0
+  colorCtr: 4
   matName: 
 --- !u!23 &1417490034
 MeshRenderer:
@@ -4165,7 +4165,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 206b7ff1600404bcd9fb22c7de41e971, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  colorCtr: 0
+  colorCtr: 4
   matName: 
 --- !u!23 &1429553979
 MeshRenderer:
@@ -4266,7 +4266,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 206b7ff1600404bcd9fb22c7de41e971, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  colorCtr: 0
+  colorCtr: 5
   matName: 
 --- !u!23 &1835314321
 MeshRenderer:
@@ -4367,7 +4367,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 206b7ff1600404bcd9fb22c7de41e971, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  colorCtr: 0
+  colorCtr: 4
   matName: 
 --- !u!23 &1853830604
 MeshRenderer:
@@ -4590,7 +4590,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 206b7ff1600404bcd9fb22c7de41e971, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  colorCtr: 0
+  colorCtr: 3
   matName: 
 --- !u!23 &1979392742
 MeshRenderer:
@@ -4740,7 +4740,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 206b7ff1600404bcd9fb22c7de41e971, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  colorCtr: 0
+  colorCtr: 5
   matName: 
 --- !u!23 &2057442720
 MeshRenderer:

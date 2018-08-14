@@ -5,13 +5,17 @@ using UnityEngine.UI;
 
 public class CanvasManager : MonoBehaviour 
 {
-    public Text score, lives, finalScore;
+    public Text score, lives, finalScore, gameOverHeading;
 
     public int scoreVal, livesVal, restartScore;
 
     public GameObject gameOverPanel, nextLevelPanel, pausePanel;
 
-    public bool isPause, isRestartScore;
+    public bool isPause, isRestartScore, isFinalLevel;
+
+    // Reference to other scripts
+    public GameManager gameManager;
+    public BrickManagerTest brickManager;
 
 	// Use this for initialization
 	void Start () 
@@ -22,25 +26,40 @@ public class CanvasManager : MonoBehaviour
         isPause = false;
         restartScore = scoreVal;
         isRestartScore = true;
+        isFinalLevel = false;
+
+        gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
 
         SetValues();
 	}
 
     void SetValues()
     {
-        livesVal = 1;
+        livesVal = 10;
         lives.text = livesVal.ToString();
     }
 	
 	// Update is called once per frame
 	void Update () 
     {
-        if(livesVal <= 0)
+        if (livesVal <= 0)
         {
             GameObject.Find("Paddle").GetComponent<Paddle>().movePaddle = false;
             gameOverPanel.SetActive(true);
-            GameObject.Find("GameManager").GetComponent<GameManager>().isGameOver = true;
+            gameManager.isGameOver = true;
             finalScore.text = "You Scored: " + scoreVal;
+            gameOverHeading.text = "Game Over";
+            gameOverHeading.color = Color.white;
+        }
+
+        if(isFinalLevel)
+        {
+            gameOverPanel.SetActive(true);
+            gameManager.isGameOver = true;
+            finalScore.text = "You Score: " + scoreVal;
+            gameOverHeading.text = "That's all folks!";
+            gameOverHeading.color = new Color(180f, 248f, 0f);
+            isFinalLevel = false;
         }
 
         if(Input.GetKeyDown(KeyCode.P))

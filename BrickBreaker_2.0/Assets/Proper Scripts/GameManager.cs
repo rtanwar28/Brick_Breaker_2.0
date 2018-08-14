@@ -8,17 +8,18 @@ using UnityEditor;
 public class GameManager : MonoBehaviour 
 {
     public int levelCtr = 1;
-    int maxLevel = 5;
+    public int maxLevel = 5;
 
     public GameObject gameCanvas, nextLevelPanel, mainMenuCanvas;
 
     AudioManager getAudioManager;
     TextFileManager fileManager;
+   // BrickManagerTest brickManager;
 
     int highScoreInt;
     private object yPaddle;
 
-    public bool isGameOver;
+    public bool isGameOver, goToMenu;
     public int finalScore;
 
     private void Awake()
@@ -31,9 +32,12 @@ public class GameManager : MonoBehaviour
         }
 
         isGameOver = false;
+        goToMenu = false;
 
         // Getting reference to the audio manager script
         getAudioManager = GameObject.Find("AudioManager").GetComponent<AudioManager>();
+
+       // brickManager = GameObject.Find("BrickManagerTest").GetComponent<BrickManagerTest>();
     }
 
     // if mouse is hovering
@@ -51,6 +55,7 @@ public class GameManager : MonoBehaviour
     public void MainMenu()
     {
         SceneManager.LoadScene("MainMenu");
+
         finalScore = gameCanvas.GetComponent<CanvasManager>().scoreVal;
 
         if (finalScore > GetComponent<HighScoreManager>().highScore_Int && isGameOver)
@@ -67,6 +72,9 @@ public class GameManager : MonoBehaviour
 
     public void PlayGame()
     {
+        gameCanvas.GetComponent<CanvasManager>().isFinalLevel = false;
+        gameCanvas.GetComponent<CanvasManager>().pausePanel.SetActive(false);
+
         mainMenuCanvas.SetActive(false);
 
         if(!gameCanvas.activeInHierarchy)
@@ -113,8 +121,10 @@ public class GameManager : MonoBehaviour
         mainMenuCanvas.SetActive(true);
         gameCanvas.GetComponent<CanvasManager>().scoreVal = 0;
         gameCanvas.GetComponent<CanvasManager>().score.text = gameCanvas.GetComponent<CanvasManager>().scoreVal.ToString();
-        gameCanvas.GetComponent<CanvasManager>().livesVal = 5;
+        gameCanvas.GetComponent<CanvasManager>().livesVal = 10;
         gameCanvas.GetComponent<CanvasManager>().lives.text = gameCanvas.GetComponent<CanvasManager>().livesVal.ToString();
+       // gameCanvas.GetComponent<CanvasManager>().isPause = false;
+
     }
 
 
